@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			deploy: {
 				options: {
 					src: 'temporary/',
-					dest: 'shwr.me/npm/',
+					dest: 'shwr.me/',
 					host: 'pepelsbey@shwr.me'
 				}
 			}
