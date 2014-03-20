@@ -68,12 +68,19 @@ module.exports = function(grunt) {
 			},
 			npm: {
 				options: {
-					archive: 'temporary/shower-npm.zip'
+					archive: 'temporary/shower-pkg.zip'
 				},
 				files: [{
 					expand: true,
-					cwd: 'node_modules/shower/',
-					src: '**',
+					cwd: '../shower/',
+					src: [
+						'**',
+						'!node_modules/',
+						'!.editorconfig',
+						'!.gitignore',
+						'!.npmignore',
+						'!Contributing.md'
+					],
 					dest: '.'
 				}]
 			}
